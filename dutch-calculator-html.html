@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kosten Calculator</title>
+    <link rel="stylesheet" href="calculator-styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Website Kosten Calculator</h1>
+        <form id="costForm">
+            <label for="websiteType">Type Website:</label>
+            <select id="websiteType" required>
+                <option value="basic">Eenvoudige Website</option>
+                <option value="business">Zakelijke Website</option>
+                <option value="ecommerce">Webshop</option>
+            </select>
+
+            <label for="pageCount">Aantal Pagina's:</label>
+            <input type="number" id="pageCount" min="1" value="1" required>
+
+            <label for="design">
+                <input type="checkbox" id="design"> Aangepast Ontwerp
+            </label>
+
+            <label for="cms">
+                <input type="checkbox" id="cms"> Content Management Systeem (CMS)
+            </label>
+
+            <label for="seo">
+                <input type="checkbox" id="seo"> SEO Optimalisatie
+            </label>
+
+            <button type="button" id="calculate">Bereken Kosten</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="calculator-script.js" async></script>
+</body>
+</html>
